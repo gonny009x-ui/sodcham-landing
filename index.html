@@ -153,6 +153,8 @@
     }
     @media (max-width: 560px){
       .cards,.product-grid,.steps,.usegrid{grid-template-columns:1fr}
+      .mascot{display:none}
+    }
     }
   </style>
 </head>
@@ -160,10 +162,9 @@
   <header>
     <div class="container nav">
       <div class="brand">
-        $1
-          <!-- LOGO: แทนที่ src ด้วยไฟล์โลโก้ของจริง (URL หรือ data URI) -->
-          <img class="logo-img" src="sodcham_logo.webp" alt="SODCHAM logo" />
-        $2
+        <div class="logo" aria-hidden="true">
+          <img src="sodcham_logo.webp" alt="SODCHAM logo"/>
+        </div>
         <span>สดฉ่ำ SODCHAM</span>
       </div>
       <nav>
@@ -419,7 +420,7 @@
       <h2>รีวิวจากคนดื่มจริง</h2>
       <p class="sub">สด ชื่น หวานพอดี — แชร์ง่ายทั้งวัน</p>
       <div class="carousel">
-        $1
+        <div class="carousel-track" id="carousel-track">
           <div class="review"><img src="sodcham_ice.webp" alt="ขวด SODCHAM บนน้ำแข็ง" style="width:100%;border-radius:12px;margin-bottom:8px"/><div class="stars">★★★★★</div><b>@freshday</b><div>เย็นจัด หวานธรรมชาติ ดื่มแล้วตื่นทันที!</div></div>
           <div class="review"><div class="stars">★★★★★</div><b>@ployfit</b><div>หลังออกกำลังกายคือสวรรค์ หวานแบบธรรมชาติ ไม่แสบคอ</div></div>
           <div class="review"><div class="stars">★★★★★</div><b>@bossdrive</b><div>ขับรถยาวๆ เติมเฟรชแทนกาแฟ ชอบขวดพกง่าย</div></div>
